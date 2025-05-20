@@ -1,0 +1,241 @@
+//banner
+.banner__section{
+    background: url(../../assets/img/banner/bnbg3.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 110px 0 160px;
+    overflow: hidden;
+    @include breakpoint(max-xl){
+        padding: 60px 0 100px;
+    }
+    position: relative;
+    .ban__home1{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        @include breakpoint(max-xxxl){
+            position: absolute;
+            top: -50px;
+            right: 0;
+        }
+        @include breakpoint(max-xxl){
+            top: -50px;
+            left: -40px;
+        }
+        border-radius: 16px;
+        img{
+            border-radius: 16px;
+        }
+    }
+    .ban__home2{
+        position: absolute;
+        top: 90px;
+        right: 0;
+        @include breakpoint(max-xxxl){
+            position: absolute;
+            top: -50px;
+            right: 0;
+        }
+        @include breakpoint(max-xxl){
+            top: -45px;
+            right: -40px;
+        }
+        border-radius: 16px;
+        border: 4px solid var(--white);
+        img{
+            border-radius: 16px;
+        }
+    }
+    .ban__home3{
+        position: absolute;
+        bottom: 120px;
+        left: 0;
+        @include breakpoint(max-xxxl){
+            left: -140px;
+        }
+        @include breakpoint(max-xxl){
+            left: -220px;
+        }
+        border-radius: 16px;
+        border: 4px solid var(--white);
+        img{
+            border-radius: 16px;
+        }
+    }
+    .ban__home4{
+        position: absolute;
+        bottom: 120px;
+        right: 0;
+        @include breakpoint(max-xxxl){
+            right: -140px;
+        }
+        @include breakpoint(max-xxl){
+            right: -240px;
+        }
+        border-radius: 16px;
+        border: 4px solid var(--white);
+        img{
+            border-radius: 16px;
+        }
+    }
+    .ban__home5{
+        position: absolute;
+        bottom: -120px;
+        left: 50%;
+        transform: translate(-50%);
+        @include breakpoint(max-xxl){
+            bottom: -80px;
+        }
+        border-radius: 16px;
+        border: 4px solid var(--white);
+        img{
+            border-radius: 16px;
+        }
+    }
+    @include breakpoint(max-xl){
+        .ban__home1,
+        .ban__home2,
+        .ban__home3,
+        .ban__home4,
+        .ban__home5{
+            display: none;
+        }
+    }
+}
+
+.banner__content__wrap{
+    position: relative;
+    z-index: 1;
+    .banner__content{
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+        z-index: 1;
+        @include breakpoint(max-xxxl){
+            max-width: 600px;
+            h1{
+                font-size: 48px;
+            }
+            h2{
+                font-size: 32px;
+            }
+        }
+        h2{
+            color: var(--success);
+            margin-bottom: 15px;
+        }
+        margin-bottom: 60px;
+       
+       @include breakpoint(max-xxl){
+            margin-bottom: 50px;
+            h2{
+                font-size: 32px;
+            }
+            h1{
+                font-size: 48px;
+            }
+       }
+       @include breakpoint(max-md){
+        margin-bottom: 40px;
+        h2{
+            font-size: 28px;
+        }
+        h1{
+            font-size: 38px;
+        }
+       }
+        @include breakpoint(max-md){
+        margin-bottom: 40px;
+        h2{
+            font-size: 22px;
+        }
+        h1{
+            font-size: 32px;
+        }
+       }
+    }
+    .counting__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        @include breakpoint(max-xs){
+            flex-wrap: wrap;
+        }
+        .counter__items{
+            text-align: center;
+            border: 1px solid var(--success);
+            padding: 20px 5px 8px;
+            border-radius: 30px;
+            width: 200px;
+            p{
+                color: var(--white);
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 10px;
+                @include breakpoint(max-xxl){
+                    font-size: 16px;
+                }
+            }
+            .counter__content{
+                .cont{
+                    justify-content: center;
+                    .odometers{
+                        color: var(--success);
+                        font-size: 52px;
+                        font-weight: 400;
+                        @include breakpoint(max-xxl){
+                            font-size: 42px;
+                        }
+                    }
+                    .plus__icon{
+                        color: var(--success);
+                        font-size: 52px;
+                        font-weight: 700;
+                        @include breakpoint(max-xxl){
+                            font-size: 42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .showcase__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background: var(--base);
+        max-width: 500px;
+        border-radius: 100px;
+        margin: 40px auto 0;
+        padding: 20px 10px;
+        @include breakpoint(max-xs){
+            flex-wrap: wrap;
+        }
+        .showcase__items{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            img{
+                border-radius: 50%;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.fz-52{
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--success);
+    @include breakpoint(max-lg){
+        font-size: 48px;
+    }
+    @include breakpoint(max-md){
+        font-size: 36px;
+    }
+}
+
+//banner

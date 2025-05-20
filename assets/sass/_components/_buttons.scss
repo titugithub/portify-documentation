@@ -1,0 +1,51 @@
+/*--Button Area Start--*/
+/*--Button Area Start--*/
+.cmn--btn {
+	border-radius: 5px;
+	padding: 10px 25px 11px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+	display: inline-block;
+	color: var(--white);
+	text-transform: capitalize;
+	position: relative;
+	background: var(--success);
+	overflow: hidden;
+	span{
+		position: relative;
+		z-index: 1;
+		transition: all 0.5s;
+	}
+	&::before{
+		position: absolute;
+		content: "";
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left:50%;
+		width: 0px;
+		height: 0px;
+		background: #41E295;
+		transition: all 0.5s;
+	}
+	&:hover{
+		span{
+			color: #091E42;
+		}
+		&::before{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.border__btn{
+	background: transparent;
+	border: 1px solid var(--success);
+	color: var(--themetext);
+	transition: all 0.4s;
+	&:hover{
+		border-color: #41E295;
+	}
+}
+/*--Button Area End--*/
+/*--Button Area End--*/
